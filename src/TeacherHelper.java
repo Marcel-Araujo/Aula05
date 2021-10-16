@@ -13,6 +13,7 @@ public class TeacherHelper {
 		Scanner leitor = new Scanner(System.in);
 		
 		while(opcao!=4) {
+			System.out.println(" ");
 			System.out.println("FERRAMENTA DE AUXÍLIO AO PROFESSOR!");
 			System.out.println("Selecione a opção desejada:");
 			System.out.println("1 - Calcular salário");
@@ -48,6 +49,7 @@ public class TeacherHelper {
 					System.out.println("Digite a nota do " + (i+1) + "º aluno:");
 					notaAluno = leitor.nextDouble();
 					mediaAlunos = mediaAlunos + notaAluno;
+					i++;
 				}
 				mediaAlunos = mediaAlunos / qtdeAlunos;
 				System.out.println("A média de notas dos alunos dessa turma é " + mediaAlunos);
@@ -84,7 +86,7 @@ public class TeacherHelper {
 				
 			}
 		}
-	
+		
 		leitor.close();
 
 	}
